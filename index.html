@@ -2,36 +2,90 @@
 <html>
 <head>
   <title>IanMyersApplication</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,300,100,900,900italic' rel='stylesheet' type='text/css'>
   <script src="https://code.jquery.com/jquery-latest.min.js"></script>
   <script>
     $(document).ready(function(){
+      $("#letter").click(function(){
+        $(".coverletter").toggleClass("hide");
+        $("#letter").toggleClass("clicked");
+      });
+      $("#info").click(function(){
+        $(".contact").toggleClass("hide");
+        $("#info").toggleClass("clicked");
+      });
+      $("#innnfo").click(function(){
+        $(".resume").toggleClass("hide");
+        $("#innnfo").toggleClass("clicked");
+      });
 
     });
   </script>
   <style>
+    body{
+      font-family: 'Lato', sans-serif;
+    }
     .hide{
       display:none;
+      transition:12s;
     }
-    h2{
-      margin-top:10px;
-      text-align:top; 
+    .contact{
+      text-align:center;
+      font-weight:100;
     }
+    #info{
+      transition:.31s;
+    }
+    h1, h2{
+      margin-top:30px;
+      font-size:30px;
+      font-weight:300;
+      text-align:center;
+    }
+    h2:hover{
+      cursor:pointer;
+    }
+    .clicked{
+      text-decoration:overline;
+      font-weight:100;
+      font-size:43px;
+      transition:.31s;
+    }
+    #letter{
+      transition:.31s;
+    }
+
   </style>
 </head>
 <body>
   <div id = "total">
+
+<h1>Ian Myers</h1>
+
+<h2 id = "info">contact</h2>
     <div class = "contact hide">
-      <h2>contact</h2>
       <p class = "address">154 Albany Avenue, Apt. 2
         Brookly, NY 11213</p>
       <p class = "email">ianjm94@gmail.com</p>
       <p class = "number">518-421-6047</p>
     </div>
+
+<h2 id = "letter" class = "clicked">cover letter</h2>
     <div class = "coverletter">
-      <h2>cover letter</h2>
-      <p class = "letter"></p>
+      <p>
+        Lorem ipsum dolor sit amet, tempus erat porttitor, felis tempus nunc at vitae eleifend, urna magnis. Luctus enim, id mollis congue ac, eget accumsan vel mi pretium donec, lacus auctor in duis, urna lacinia quis justo a tristique. Sem justo a ullamcorper nec, mauris cum nibh, venenatis placerat amet, sit scelerisque et mollis mauris erat, justo duis eleifend ut phasellus. Sunt lorem sit, amet tincidunt iaculis et eget, penatibus ornare leo donec elit scelerisque. Cras dapibus et mauris, neque nunc, urna ligula morbi nunc, dui purus fermentum tempus vitae. Porttitor aliquam suspendisse enim, erat etiam phasellus commodo mi id, est ipsum, pellentesque justo. Purus phasellus mauris id mauris metus, dapibus consectetuer urna. Tellus massa nulla pretium consequat vivamus ullamcorper. Vestibulum phasellus a posuere ullamcorper vestibulum. Amet facilisis in, in nunc, ornare feugiat libero nulla tristique condimentum, elit eget ipsum, ipsum turpis nascetur. Egestas ad pede ut, quisque luctus mauris, morbi mi non torquent a et.
+Dolor est sit leo lacus, mauris senectus fermentum cursus tellus tempor. Bibendum et natoque neque egestas, nec eros ridiculus modi tincidunt, metus sit ligula, nunc vel maecenas nisl sit. Rutrum lectus volutpat, purus nunc vestibulum integer ultrices. In et felis diam dignissim neque quam, id nunc arcu at lectus, nec est risus, tortor tincidunt laoreet ipsum est dolor. Est ut donec auctor arcu metus nec, et sed. Faucibus porttitor ipsum mattis, in elit diam tellus, nullam pulvinar morbi facilisis. Lectus lobortis nec, in a mi consectetuer, suscipit vitae erat elit duis elit. Vestibulum at pellentesque pellentesque laoreet a, augue gravida auctor eu tincidunt nam, sed auctor augue, amet non tortor, iaculis velit velit venenatis feugiat ligula volutpat. A id bibendum justo metus vestibulum tincidunt. Congue ipsum quisque purus leo. Vitae vestibulum dolor amet maecenas, mauris quam vehicula adipiscing, vel ante magna morbi, nam purus diam elit felis pulvinar vivamus, enim massa fringilla ligula repudiandae sem. Dolor et lorem tempus vehicula.
+Placerat enim, adipiscing sed eros faucibus in, justo aliquip suspendisse turpis mauris, ligula sed nulla orci. Eleifend est ornare lectus nonummy volutpat, turpis suspendisse tortor, ornare cras eleifend suspendisse vestibulum. Eget orci sed, at ut, gravida aenean interdum posuere. Imperdiet nunc aenean, bibendum vivamus, phasellus mauris lobortis eleifend. Nulla sit suspendisse scelerisque eu vehicula, aptent integer libero luctus mi aliquam. Elit ut, amet commodo pellentesque, mauris diam egestas amet congue mi enim. Iaculis justo risus eu magna wisi. Iaculis nullam sit eros diam, convallis ut, tortor cras imperdiet dui purus, consequat et, in ac tempus amet.
+      </p>
     </div>
-    <div class = "resume hide"></div>
+
+<h2 id = "innnfo">resume</h2>
+    <div class = "resume hide">
+      <p>  Lorem ipsum dolor sit amet, tempus erat porttitor, felis tempus nunc at vitae eleifend, urna magnis. Luctus enim, id mollis congue ac, eget accumsan vel mi pretium donec, lacus auctor in duis, urna lacinia quis justo a tristique. Sem justo a ullamcorper nec, mauris cum nibh, venenatis placerat amet, sit scelerisque et mollis mauris erat, justo duis eleifend ut phasellus. Sunt lorem sit, amet tincidunt iaculis et eget, penatibus ornare leo donec elit scelerisque. Cras dapibus et mauris, neque nunc, urna ligula morbi nunc, dui purus fermentum tempus vitae. Porttitor aliquam suspendisse enim, erat etiam phasellus commodo mi id, est ipsum, pellentesque justo. Purus phasellus mauris id mauris metus, dapibus consectetuer urna. Tellus massa nulla pretium consequat vivamus ullamcorper. Vestibulum phasellus a posuere ullamcorper vestibulum. Amet facilisis in, in nunc, ornare feugiat libero nulla tristique condimentum, elit eget ipsum, ipsum turpis nascetur. Egestas ad pede ut, quisque luctus mauris, morbi mi non torquent a et.
+Dolor est sit leo lacus, mauris senectus fermentum cursus tellus tempor. Bibendum et natoque neque egestas, nec eros ridiculus modi tincidunt, metus sit ligula, nunc vel maecenas nisl sit. Rutrum lectus volutpat, purus nunc vestibulum integer ultrices. In et felis diam dignissim neque quam, id nunc arcu at lectus, nec est risus, tortor tincidunt laoreet ipsum est dolor. Est ut donec auctor arcu metus nec, et sed. Faucibus porttitor ipsum mattis, in elit diam tellus, nullam pulvinar morbi facilisis. Lectus lobortis nec, in a mi consectetuer, suscipit vitae erat elit duis elit. Vestibulum at pellentesque pellentesque laoreet a, augue gravida auctor eu tincidunt nam, sed auctor augue, amet non tortor, iaculis velit velit venenatis feugiat ligula volutpat. A id bibendum justo metus vestibulum tincidunt. Congue ipsum quisque purus leo. Vitae vestibulum dolor amet maecenas, mauris quam vehicula adipiscing, vel ante magna morbi, nam purus diam elit felis pulvinar vivamus, enim massa fringilla ligula repudiandae sem. Dolor et lorem tempus vehicula.
+Placerat enim, adipiscing sed eros faucibus in, justo aliquip suspendisse turpis mauris, ligula sed nulla orci. Eleifend est ornare lectus nonummy volutpat, turpis suspendisse tortor, ornare cras eleifend suspendisse vestibulum. Eget orci sed, at ut, gravida aenean interdum posuere. Imperdiet nunc aenean, bibendum vivamus, phasellus mauris lobortis eleifend. Nulla sit suspendisse scelerisque eu vehicula, aptent integer libero luctus mi aliquam. Elit ut, amet commodo pellentesque, mauris diam egestas amet congue mi enim. Iaculis justo risus eu magna wisi. Iaculis nullam sit eros diam, convallis ut, tortor cras imperdiet dui purus, consequat et, in ac tempus amet.</p>
+    </div>
+
 
   </div>
 </body>
